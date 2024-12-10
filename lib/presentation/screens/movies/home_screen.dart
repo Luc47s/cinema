@@ -1,5 +1,6 @@
 import 'package:cinema/presentation/providers/movies/movies_providers.dart';
 import 'package:cinema/presentation/widgets/shared/custom_appbar.dart';
+import 'package:cinema/presentation/widgets/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -37,18 +38,8 @@ class _HomeViewState extends ConsumerState<_HomeView> {
 
     return Column(
       children: [
-        CustomAppbar(),
-        Expanded(
-          child: ListView.builder(
-            itemCount: nowPlayingMovies.length,
-            itemBuilder: (context, index) {
-              final movie = nowPlayingMovies[index];
-              return ListTile(
-                title: Text(movie.title),
-              );
-            },
-          ),
-        )
+        const CustomAppbar(),
+        MoviesSlideshow(movies: nowPlayingMovies)
       ],
     );
   }
