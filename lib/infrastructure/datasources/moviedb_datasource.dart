@@ -10,7 +10,7 @@ class MovieDbDatasource extends MoviesDatasource {
       baseUrl: 'https://api.themoviedb.org/3',
       queryParameters: {
         'api_key': Environment.movieDbkey,
-        'lenguage': 'es-MX'
+        'language': 'es-MX'
       }));
 
   @override
