@@ -1,8 +1,8 @@
 import 'package:cinema/config/constants/environment.dart';
 import 'package:cinema/domain/datasources/movies_datasource.dart';
 import 'package:cinema/domain/entities/movies.dart';
-import 'package:cinema/infrastructure/datasources/models/moviesdb/movie_details.dart';
-import 'package:cinema/infrastructure/datasources/models/moviesdb/moviedb_response.dart';
+import 'package:cinema/infrastructure/models/moviesdb/movie_details.dart';
+import 'package:cinema/infrastructure/models/moviesdb/moviedb_response.dart';
 import 'package:dio/dio.dart';
 import 'package:cinema/infrastructure/datasources/mappers/movie_mapper.dart';
 

@@ -1,6 +1,6 @@
 import 'package:cinema/domain/entities/movies.dart';
-import 'package:cinema/infrastructure/datasources/models/moviesdb/movie_details.dart';
-import 'package:cinema/infrastructure/datasources/models/moviesdb/movie_movidedb.dart';
+import 'package:cinema/infrastructure/models/moviesdb/movie_details.dart';
+import 'package:cinema/infrastructure/models/moviesdb/movie_movidedb.dart';
 
 class MovieMapper {
   static Movie movieDBToEntity(MovieMovieDB moviedb) => Movie(
