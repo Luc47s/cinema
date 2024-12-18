@@ -4,7 +4,7 @@
 
 import 'dart:convert';
 
-import 'package:cinema/infrastructure/datasources/models/moviesdb/movie_movidedb.dart';
+import 'package:cinema/infrastructure/models/moviesdb/movie_movidedb.dart';
 
 MovieDbResponse movieDbResponseFromJson(String str) =>
     MovieDbResponse.fromJson(json.decode(str));
