@@ -9,10 +9,10 @@ final movieInfoProvider =
   return MovieMapNotifier(getMovie: movieRepository.getMovieById);
 });
 
-typedef GetMovieCall = Future<Movie> Function(String movieId);
+typedef GetMovieCallback = Future<Movie> Function(String movieId);
 
 class MovieMapNotifier extends StateNotifier<Map<String, Movie>> {
-  final GetMovieCall getMovie;
+  final GetMovieCallback getMovie;
   MovieMapNotifier({required this.getMovie}) : super({});
 
   Future<void> loadMovie(String movieId) async {
